@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso — La Composición Escape Room</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0D0906;
+      font-family: 'Georgia', serif;
+      color: #E8D5B0;
+      padding: 2rem;
+    }
+    .card {
+      text-align: center;
+      max-width: 480px;
+      width: 100%;
+    }
+    h1 {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      letter-spacing: .04em;
+      margin-bottom: .4rem;
+      color: #F5E6C8;
+    }
+    .sub {
+      font-size: 1rem;
+      color: #A89070;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+    .qr-wrap {
+      background: #fff;
+      display: inline-block;
+      padding: 1.2rem;
+      border-radius: 12px;
+      margin-bottom: 1.8rem;
+    }
+    .qr-wrap img { display: block; width: 220px; height: 220px; }
+    .url {
+      font-size: 1rem;
+      word-break: break-all;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 8px;
+      padding: .7rem 1rem;
+      margin-bottom: 1.6rem;
+      color: #D4B896;
+      letter-spacing: .02em;
+    }
+    .btn {
+      display: inline-block;
+      background: #8B5E3C;
+      color: #F5E6C8;
+      text-decoration: none;
+      padding: .8rem 2rem;
+      border-radius: 8px;
+      font-size: 1.05rem;
+      letter-spacing: .05em;
+      transition: background .2s;
+    }
+    .btn:hover { background: #A0703F; }
+    .hint {
+      margin-top: 1.4rem;
+      font-size: .85rem;
+      color: #6B5540;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>La Composición</h1>
+    <p class="sub">Antonio Skármeta — Escape Room</p>
+
+    <div class="qr-wrap">
+      <img src="qr-acceso.png" alt="QR de acceso al Escape Room" />
+    </div>
+
+    <div class="url">albecabrera.github.io/escape-room-lacomposicion</div>
+
+    <a class="btn" href="index.html">▶ Entrar al juego</a>
+
+    <p class="hint">Escaneá el QR con tu celular o escribí el link en el navegador.</p>
+  </div>
+</body>
+</html>
